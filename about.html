@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="درباره معاونت آموزش متوسطه استان خراسان جنوبی؛ سخنان رهبران و اسناد بالادستی تحول آموزش و پرورش.">
+  <title>درباره ما | معاونت آموزش متوسطه خراسان جنوبی</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230a0e27' stroke='%23ffd700' stroke-width='5'/%3E%3Cpath d='M50 15 L61 39 L85 50 L61 61 L50 85 L39 61 L15 50 L39 39 Z' fill='%2300f0ff'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ═══════════ اصلاح موبایل چارت شعاعی ═══════════
+       ریشهٔ مشکل: در style.css (بخش ۱۷)، .radial-orbit در موبایل مخفی شده بود؛
+       در حالی که هر چهار کارت راهبرد داخل آن هستند. این بلوک نسخهٔ اصلاح‌شده است
+       و چون بعد از style.css لود می‌شود، قانون معیوب را بازنویسی می‌کند. -->
+  <style>
+    @media(max-width:780px){
+      .radial-chart{width:100%;height:auto;margin:20px auto 0;display:flex;flex-direction:column;}
+      .radial-ring,.spoke-line{display:none;}
+      .radial-orbit{display:block;position:static;animation:none;order:2;}
+      .radial-spoke{position:static;transform:none;}
+      .orbit-counter{display:block;position:static;width:auto;height:auto;animation:none;}
+      .radial-item{display:block;position:static;transform:none;width:auto;max-width:380px;margin:14px auto;}
+      .radial-center{position:static;transform:none;width:130px;height:130px;margin:0 auto 6px;order:1;}
+    }
+  </style>
+</head>
+<body data-page="about">
+
+  <!-- هدر و فوتر به‌صورت خودکار توسط script.js تزریق می‌شوند -->
+  <div id="header-placeholder"></div>
+
+  <main>
+
+    <!-- ═════════════════════ هیروی کوچک ═════════════════════ -->
+    <section class="hero small">
+      <div class="hero-glow"></div>
+      <div class="particles"></div>
+
+      <div class="hero-content">
+        <span class="hero-badge epic-in"><span class="material-icons">explore</span> نقشهٔ راه استان</span>
+        <h1 class="hero-title epic-in" style="animation-delay:.2s;">
+          <span class="text-grad">درباره ما و اسناد بالادستی</span>
+        </h1>
+        <p class="hero-sub epic-in" style="animation-delay:.45s;">بر پایه اسناد بالادستی، مسیر تحول را ترسیم کرده‌ایم</p>
+      </div>
+    </section>
+
+    <!-- ═════════════════════ سخنان رهبران ═════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">کلام <span class="gold-word">راهبران</span></h2>
+          <p class="section-sub">سخنان رهبران نظام، چراغ راه معاونت آموزش متوسطه استان</p>
+        </div>
+
+        <div class="leader-grid">
+          <article class="leader-card glass-card tilt reveal">
+            <div class="leader-avatar">
+              <div class="img-inner">
+                <img src="img/leader.jpg" alt="رهبر انقلاب اسلامی" loading="lazy">
+              </div>
+            </div>
+            <p class="leader-quote">«تحول، کار عمقی است، کار اساسی است که بایستی اتفاق بیفتد.»</p>
+            <div class="leader-name">مقام معظم رهبری</div>
+            <div class="leader-role">رهبر انقلاب اسلامی</div>
+          </article>
+
+          <article class="leader-card glass-card tilt reveal" data-delay="150">
+            <div class="leader-avatar">
+              <div class="img-inner">
+                <img src="img/president.jpg" alt="رئیس‌جمهور" loading="lazy">
+              </div>
+            </div>
+            <p class="leader-quote">«بکارگیری ابزارهای نوین ارتباطی و آموزشی می‌تواند به اجرای عدالت آموزشی در سراسر کشور کمک کند.»</p>
+            <div class="leader-name">دکتر مسعود پزشکیان</div>
+            <div class="leader-role">رئیس‌جمهور اسلامی ایران</div>
+          </article>
+
+          <article class="leader-card glass-card tilt reveal" data-delay="300">
+            <div class="leader-avatar">
+              <div class="img-inner">
+                <img src="img/minister.jpg" alt="وزیر آموزش و پرورش" loading="lazy">
+              </div>
+            </div>
+            <p class="leader-quote">«ارتقای کیفیت آموزشی، توسعه عدالت و توسعه مهارت‌آموزی از مهم‌ترین محورهاست.»</p>
+            <div class="leader-name">وزیر آموزش و پرورش</div>
+            <div class="leader-role">وزارت آموزش و پرورش</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════════════ اسناد بالادستی ═════════════════════ -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">اسناد <span class="cyan-word">بالادستی</span></h2>
+          <p class="section-sub">شش سند مرجعی که چشم‌انداز و مسیر تحول استان را ترسیم می‌کنند</p>
+        </div>
+
+        <div class="doc-grid">
+          <div class="doc-card glass-card tilt reveal">
+            <div class="doc-icon"><span class="material-icons">gavel</span></div>
+            <div>
+              <h3>سیاست‌های ابلاغی رهبر شهید انقلاب</h3>
+              <p>چارچوب کلان حاکم بر نظام آموزش و پرورش</p>
+            </div>
+          </div>
+          <div class="doc-card glass-card tilt reveal" data-delay="100">
+            <div class="doc-icon"><span class="material-icons">article</span></div>
+            <div>
+              <h3>بیانیه گام دوم انقلاب</h3>
+              <p>تأکید بر تحول علمی و پرورشی در نسل چهارم انقلاب</p>
+            </div>
+          </div>
+          <div class="doc-card glass-card tilt reveal" data-delay="200">
+            <div class="doc-icon"><span class="material-icons">menu_book</span></div>
+            <div>
+              <h3>سند تحول بنیادین آموزش و پرورش</h3>
+              <p>نقشهٔ راه بنیادین نظام تعلیم و تربیت</p>
+            </div>
+          </div>
+          <div class="doc-card glass-card tilt reveal" data-delay="300">
+            <div class="doc-icon"><span class="material-icons">book</span></div>
+            <div>
+              <h3>برنامه درسی ملی</h3>
+              <p>تصویر جامع اهداف و برنامه‌های آموزشی</p>
+            </div>
+          </div>
+          <div class="doc-card glass-card tilt reveal" data-delay="400">
+            <div class="doc-icon"><span class="material-icons">trending_up</span></div>
+            <div>
+              <h3>برنامه هفتم پیشرفت</h3>
+              <p>اولویت‌های توسعه‌ای هفت‌سالهٔ کشور</p>
+            </div>
+          </div>
+          <div class="doc-card glass-card tilt reveal" data-delay="500">
+            <div class="doc-icon"><span class="material-icons">map</span></div>
+            <div>
+              <h3>نقشه راه اجرایی‌سازی سند تحول بنیادین</h3>
+              <p>مسیر عملیاتی‌شدن سند در استان</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════════════ چرخ‌فلک شعاعی راهبردها ═════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">چهار راهبرد <span class="gold-word">اصلی</span></h2>
+          <p class="section-sub">چرخ‌فلک راهبردها — برای مطالعهٔ آرام، نشانگر را روی چارت نگه دارید</p>
+        </div>
+
+        <div class="radial-chart reveal-zoom">
+          <!-- حلقه‌های نئونی چرخان -->
+          <div class="radial-ring r1"></div>
+          <div class="radial-ring r2"></div>
+
+          <!-- مدار چرخان (۴ کارت با چرخش‌معکوس تودرتو، متن همیشه صاف می‌ماند) -->
+          <div class="radial-orbit">
+            <div class="radial-spoke" style="--a:-90deg;">
+              <span class="spoke-line"></span>
+              <div class="orbit-counter">
+                <div class="radial-item">
+                  <span class="material-icons">balance</span>
+                  <h4>توسعه عدالت آموزشی</h4>
+                  <p>عدالت در توزیع فرصت‌ها و امکانات</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="radial-spoke" style="--a:0deg;">
+              <span class="spoke-line"></span>
+              <div class="orbit-counter">
+                <div class="radial-item">
+                  <span class="material-icons">stars</span>
+                  <h4>کیفیت‌بخشی به آموزش</h4>
+                  <p>ارتقای کیفیت فرآیندها و نتایج</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="radial-spoke" style="--a:90deg;">
+              <span class="spoke-line"></span>
+              <div class="orbit-counter">
+                <div class="radial-item">
+                  <span class="material-icons">handyman</span>
+                  <h4>مهارت‌آموزی</h4>
+                  <p>هر دانش‌آموز، یک مهارت</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="radial-spoke" style="--a:180deg;">
+              <span class="spoke-line"></span>
+              <div class="orbit-counter">
+                <div class="radial-item">
+                  <span class="material-icons">lightbulb</span>
+                  <h4>نوآوری و خلاقیت</h4>
+                  <p>ترویج فناوری و خلاقیت در مدارس</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- هستهٔ مرکزی چارت -->
+          <div class="radial-center">
+            <span class="material-icons">hub</span>
+            <strong>راهبردهای اصلی</strong>
+            <span>معاونت آموزش متوسطه</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════════════ گام بعدی سفر (بخش جدید) ═════════════════════ -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2>گام بعدی سفر: <span class="text-grad">دورهٔ اول متوسطه</span></h2>
+          <p>کشف استعدادها؛ آموزش هوش مصنوعی، جشنوارهٔ نوجوان خوارزمی و طرح داناب</p>
+          <a href="middle-school.html" class="btn btn-ghost"><span class="material-icons">arrow_back</span> ادامهٔ گزارش</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
