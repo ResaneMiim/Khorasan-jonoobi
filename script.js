@@ -99,7 +99,7 @@ function injectHeaderFooter() {
       </div>
       <div class="footer-bottom">
         <div class="container footer-bottom-inner">
-          <span>© ۱۴۰۴–۱۴۰۵ معاونت آموزش متوسطه استان خراسان جنوبی</span>
+          <span>© ۱۴۰۵–۱۴۰۴ معاونت آموزش متوسطه استان خراسان جنوبی</span>
           <span class="footer-motto">ارتقای کیفیت | توسعه عدالت | مهارت‌آموزی</span>
         </div>
       </div>
